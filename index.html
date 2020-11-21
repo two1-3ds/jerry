@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            th, td, p, input, h3 {
+                font:12px 'Segoe UI';
+            }
+            table, th, td {
+                border: solid 2px #ddd;
+                border-collapse: collapse;
+                padding: 2px 3px;
+                text-align: center;
+            }
+            th {
+                font-weight:bold;
+            }
+        </style>
+    </head>
+<body>
+    
+    <p id="text-area">TEST</p>
+
+    <h3>
+        Click the button to create a dynamic table using data extracted from a JSON array.
+        <!-- poki co jest tworzona tabela po kliknieciu, ale trzeba bedzie sie tego pozbyc -->
+    </h3>
+    <input type='button' onclick='tableFromJson()' 
+    
+    	value='Create Table from JSON data' />
+        
+    <p id='showData'></p>
+    
+    <p id='msg'></p>
+    
+    <script src="parser.js"></script>
+</body>
+
+</html>
+
